@@ -1,0 +1,21 @@
+.guesses {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.guesses .guess1 {
+  border: 2px solid red;
+}
+.guesses .guess2 {
+  border: 2px solid blue;
+}
+.guesses .guess3 {
+  border: 2px solid green;
+}
+.guesses .guess4 {
+  border: 2px solid yellow;
+}
+.guesses .guess5 {
+  border: 2px solid purple;
+}
