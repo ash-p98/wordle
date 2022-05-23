@@ -1,21 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: Poppins;
+  align-items: center;
+}
+
 .guesses {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.guesses .guess1 {
-  border: 2px solid red;
+.guesses .one, .guesses .two, .guesses .three, .guesses .four, .guesses .five, .guesses .six {
+  display: flex;
+  justify-content: space-between;
 }
-.guesses .guess2 {
-  border: 2px solid blue;
+.guesses .UG1, .guesses .UG2, .guesses .UG3, .guesses .UG4, .guesses .UG5, .guesses .UG6 {
+  padding: 10px;
 }
-.guesses .guess3 {
-  border: 2px solid green;
+
+.guesses .color {
+  background-color: green;
 }
-.guesses .guess4 {
-  border: 2px solid yellow;
-}
-.guesses .guess5 {
-  border: 2px solid purple;
+
+.keyboard {
+  display: flex;
+  justify-content: center;
 }

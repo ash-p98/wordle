@@ -4,73 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css" />
     <title>Ash's Wordle</title>
   </head>
   <body>
     <h1>Ash's Wordle</h1>
     <div class="guesses">
+      <div class="guess1">
         <input type="text" class="text1" minlength="5" maxlength="5" />
         <button class="enter1">Guess 1</button>
-        <div class="UG1 L1"></div>
-        <div class="UG1 L2"></div>
-        <div class="UG1 L3"></div>
-        <div class="UG1 L4"></div>
-        <div class="UG1 L5"></div>
-
+        <div class="one">
+          <div class="UG1 L1"></div>
+          <div class="UG1 L2"></div>
+          <div class="UG1 L3"></div>
+          <div class="UG1 L4"></div>
+          <div class="UG1 L5"></div>
+        </div>
+      </div>
 
       <div class="guess2">
         <input type="text" maxlength="5" />
         <button class="enter2">Guess 2</button>
-        <div class="UG2 L1"></div>
-        <div class="UG2 L2"></div>
-        <div class="UG2 L3"></div>
-        <div class="UG2 L4"></div>
-        <div class="UG2 L5"></div>
+        <div class="two">
+          <div class="UG2 L1"></div>
+          <div class="UG2 L2"></div>
+          <div class="UG2 L3"></div>
+          <div class="UG2 L4"></div>
+          <div class="UG2 L5"></div>
+        </div>
       </div>
 
       <div class="guess3">
         <input type="text" maxlength="5" />
         <button class="enter3">Guess 3</button>
-        <div class="UG3 L1"></div>
-        <div class="UG3 L2"></div>
-        <div class="UG3 L3"></div>
-        <div class="UG3 L4"></div>
-        <div class="UG3 L5"></div>
+        <div class="three">
+          <div class="UG3 L1"></div>
+          <div class="UG3 L2"></div>
+          <div class="UG3 L3"></div>
+          <div class="UG3 L4"></div>
+          <div class="UG3 L5"></div>
+        </div>
       </div>
 
       <div class="guess4">
         <input type="text" maxlength="5" />
         <button class="enter4">Guess 4</button>
-        <div class="UG4 L1"></div>
-        <div class="UG4 L2"></div>
-        <div class="UG4 L3"></div>
-        <div class="UG4 L4"></div>
-        <div class="UG4 L5"></div>
+        <div class="four">
+          <div class="UG4 L1"></div>
+          <div class="UG4 L2"></div>
+          <div class="UG4 L3"></div>
+          <div class="UG4 L4"></div>
+          <div class="UG4 L5"></div>
+        </div>
       </div>
 
       <div class="guess5">
         <input type="text" maxlength="5" />
         <button class="enter5">Guess 5</button>
-        <div class="UG5 L1"></div>
-        <div class="UG5 L2"></div>
-        <div class="UG5 L3"></div>
-        <div class="UG5 L4"></div>
-        <div class="UG5 L5"></div>
+        <div class="five">
+          <div class="UG5 L1"></div>
+          <div class="UG5 L2"></div>
+          <div class="UG5 L3"></div>
+          <div class="UG5 L4"></div>
+          <div class="UG5 L5"></div>
+        </div>
       </div>
 
       <div class="guess6">
         <input type="text" maxlength="5" />
-        <button class="enter6">guess6</button>
-        <div class="UG6 L1"></div>
-        <div class="UG6 L2"></div>
-        <div class="UG6 L3"></div>
-        <div class="UG6 L4"></div>
-        <div class="UG6 L5"></div>
+        <button class="enter6">Guess 6</button>
+        <div class="six">
+          <div class="UG6 L1"></div>
+          <div class="UG6 L2"></div>
+          <div class="UG6 L3"></div>
+          <div class="UG6 L4"></div>
+          <div class="UG6 L5"></div>
+        </div>
       </div>
-
     </div>
 
+    <div id="keyboard">
+      <div class="row">
+        <button data-key="q">q</button><button data-key="w">w</button
+        ><button data-key="e">e</button><button data-key="r">r</button
+        ><button data-key="t">t</button><button data-key="y">y</button
+        ><button data-key="u">u</button><button data-key="i">i</button
+        ><button data-key="o">o</button><button data-key="p">p</button>
+      </div>
+      <div class="row">
+        <div class="spacer half"></div>
+        <button data-key="a">a</button><button data-key="s">s</button
+        ><button data-key="d">d</button><button data-key="f">f</button
+        ><button data-key="g">g</button><button data-key="h">h</button
+        ><button data-key="j">j</button><button data-key="k">k</button
+        ><button data-key="l">l</button>
+        <div class="spacer half"></div>
+      </div>
+      <div class="row">
+        <button data-key="↵" class="one-and-a-half">enter</button
+        ><button data-key="z">z</button><button data-key="x">x</button
+        ><button data-key="c">c</button><button data-key="v">v</button
+        ><button data-key="b">b</button><button data-key="n">n</button
+        ><button data-key="m">m</button
+        ><button data-key="←" class="one-and-a-half">
+          <game-icon icon="backspace"></game-icon>
+        </button>
+      </div>
+    </div>
 
     <script type="module" src="./main.js"></script>
     <script type="module" src="./words.js"></script>

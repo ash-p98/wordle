@@ -1,31 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: Poppins;
+  align-items: center;
+}
+
 .guesses {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  ;
 
-  .guess1 {
-    border: 2px solid red;
+  .one, .two, .three, .four, .five, .six{
+    display: flex;
+    justify-content: space-between;
   }
-  .guess2 {
-    border: 2px solid blue;
-  }
+  .UG1, .UG2, .UG3, .UG4, .UG5, .UG6 {
 
-  .guess3{
-      border: 2px solid green;
-  }
-
-  .guess4{
-      border: 2px solid yellow;
-  }
-
-  .guess5{
-      border: 2px solid purple;
+    padding: 10px;
   }
 
 }
 
 .guesses .color{
     background-color: green;
+}
+
+.keyboard{
+  display: flex;
+  justify-content: center;
 }
